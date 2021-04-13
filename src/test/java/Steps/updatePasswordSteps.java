@@ -17,7 +17,8 @@ public class updatePasswordSteps{
 	
 	@Before
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver"); 
+		// Here, chromedriver path is subject to each machine. We can streamline this by containerizing
 		driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 	}
